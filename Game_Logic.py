@@ -6,6 +6,13 @@ import sqlite3 as sql
 conn = sql.connect("Name.db")
 cur = conn.cursor()
 def on_window_close_event(event):
+    # """
+    # The function `on_window_close_event` deletes all records from the `Player_Name` table in a database
+    # and closes the connection.
+    
+    # :param event: The event parameter is an object that represents the window close event. It contains
+    # information about the event, such as the type of event and any additional data associated with it
+    # """
     cur.execute("DELETE FROM Player_Name;")
     conn.commit()
     conn.close()
