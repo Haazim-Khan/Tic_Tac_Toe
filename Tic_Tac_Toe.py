@@ -1,3 +1,4 @@
+import DataBase
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Game_Logic import Ui_Form
 import sqlite3 as sql
