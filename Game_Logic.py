@@ -55,8 +55,6 @@ class Ui_Form(object):
             if (self.one.isEnabled() == False) and (self.two.isEnabled() == False) and (self.three.isEnabled() == False) and (self.four.isEnabled() == False) and (self.five.isEnabled() == False) and (self.six.isEnabled() == False) and (self.seven.isEnabled() == False) and (self.eight.isEnabled() == False) and (self.nine.isEnabled() == False): 
                 self.Reset = 1
                 self.label_2.setText("Drawn!")  
-                for i in buttons:
-                    i.setEnabled(False)
                 def change_button_text():
                     self.nine.setEnabled(True)
                     self.nine.setText("RESTART")
